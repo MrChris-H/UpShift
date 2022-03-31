@@ -47,7 +47,7 @@ export default function App() {
           <Stack.Screen
             name="ProfileMaker"
             component={ProfileMakerScreen}
-            options={{ title: "Enter Details" }}
+            options={{ title: "Sign Up" }}
           ></Stack.Screen>
           <Stack.Screen name="Chat" component={ChatScreen}></Stack.Screen>
           <Stack.Screen

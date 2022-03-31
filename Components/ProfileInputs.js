@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { TextInput, View, TouchableOpacity, StyleSheet } from "react-native";
+import { View, TouchableOpacity, StyleSheet } from "react-native";
 import SelectDropdown from "react-native-select-dropdown";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import firebase from "../config/firebase";
@@ -7,6 +7,7 @@ import { setDoc, doc } from "firebase/firestore";
 import DatePicker from "./DatePicker";
 import getAge from "./ageCalculator";
 import { Button, Text } from "@rneui/base";
+import TextInput from "./TextInput"
 
 export default function ProfileInputs({ navigate }) {
   const [firstName, onChangeFirstName] = useState("");
@@ -95,7 +96,7 @@ export default function ProfileInputs({ navigate }) {
   return (
     <View style={styles.container}>
       {/* Title  */}
-      <Text style={styles.title}>Sign Up</Text>
+      <Text style={styles.title}></Text>
       <Text style={styles.starMessage}>Required Fields (*)</Text>
       {/* First Name */}
       <TextInput
@@ -120,8 +121,8 @@ export default function ProfileInputs({ navigate }) {
                 textAlign: "center",
                 color: "black",
                 paddingHorizontal: 10,
-                borderColor: "black",
-                borderWidth: 2,
+               
+                
               }
         }
         placeholder="* First Name"
@@ -142,7 +143,7 @@ export default function ProfileInputs({ navigate }) {
                 color: "black",
                 paddingHorizontal: 10,
                 borderColor: "red",
-                borderWidth: 2,
+                
               }
             : {
                 height: 40,
@@ -152,8 +153,8 @@ export default function ProfileInputs({ navigate }) {
                 textAlign: "center",
                 color: "black",
                 paddingHorizontal: 10,
-                borderColor: "black",
-                borderWidth: 2,
+              
+                
               }
         }
         placeholder="* Last Name"
@@ -195,7 +196,7 @@ export default function ProfileInputs({ navigate }) {
                   width: "70%",
                   height: 40,
                   backgroundColor: "white",
-                  borderRadius: 8,
+                  //borderRadius: 8,
                 }
           }
           buttonTextStyle={styles.dropdown2BtnTxtStyle}
@@ -267,8 +268,7 @@ export default function ProfileInputs({ navigate }) {
                 textAlign: "center",
                 color: "black",
                 paddingHorizontal: 10,
-                borderColor: "red",
-                borderWidth: 2,
+               
               }
             : {
                 height: 40,
@@ -278,8 +278,7 @@ export default function ProfileInputs({ navigate }) {
                 textAlign: "center",
                 color: "black",
                 paddingHorizontal: 10,
-                borderColor: "black",
-                borderWidth: 2,
+                
               }
         }
         placeholder="* Bike"
@@ -308,9 +307,9 @@ export default function ProfileInputs({ navigate }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: "center" },
+  container: { alignItems: "center" ,backgroundColor:"white"},
   title: {
-    alignSelf: "center",
+    alignItems: "flex-start",
     color: "black",
     fontSize: 24,
     fontWeight: "bold",
@@ -365,8 +364,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "black",
     paddingHorizontal: 10,
-    borderColor: "black",
-    borderWidth: 2,
+   
   },
   warningMessage: {
     color: "red",
