@@ -1,3 +1,5 @@
+import key from"./config/gMapKey"
+
 export default {
   expo: {
     name: "UpShift",
@@ -16,7 +18,7 @@ export default {
     assetBundlePatterns: ["**/*"],
     ios: {
       supportsTablet: true,
-      bundleIdentifier: "com.biker.Upshift",
+      bundleIdentifier: "com.LonelyBiker.Upshift",
       config: {
         googleMapsApiKey: "AIzaSyB9qaNzvpNBy-fFRSdbm7FEUHgkVEhvmvw",
       },
@@ -26,6 +28,7 @@ export default {
         foregroundImage: "./assets/adaptive-icon.png",
         backgroundColor: "#FFFFFF",
       },
+      package: "com.Lonelybiker.UpShift"
     },
     web: {
       favicon: "./assets/favicon.png",
