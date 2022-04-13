@@ -19,7 +19,7 @@ Users can sign up or login to the app using Firebase Authentication when opening
 A video demonstration can be found [here](https://www.youtube.com/watch?v=XJKzN_o_oHw)
 ## Known Issues
  - The hosting link provided only works for android users
- - IOS users can run the following build on Xcode 
+ - IOS users can run the following [build] (https://www.dropbox.com/s/t2756by000amycn/UpShift.app.zip?dl=0) on Xcode 
  - Running locally will not allow for maps use due to missing api key
  - Search functionality on android
 ## Run Locally
